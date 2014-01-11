@@ -4,61 +4,103 @@
     <meta charset='utf-8'>
     <meta http-equiv="X-UA-Compatible" content="chrome=1">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-    <link href='https://fonts.googleapis.com/css?family=Architects+Daughter' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" type="text/css" href="stylesheets/stylesheet.css" media="screen" />
-    <link rel="stylesheet" type="text/css" href="stylesheets/pygment_trac.css" media="screen" />
-    <link rel="stylesheet" type="text/css" href="stylesheets/print.css" media="print" />
-
+    <link rel="stylesheet" type="text/css" href="stylesheets/font.css" media="screen" />
     <!--[if lt IE 9]>
     <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
     <![endif]-->
-
     <title>Prestashop + Koding by kgranger</title>
   </head>
-
   <body>
     <header>
       <div class="inner">
         <h1>Prestashop + Koding</h1>
-        <h2>Install, Host, and Play with the latest dev PrestaShop. The extra easy way.</h2>
-        <a href="https://github.com/kgranger/PrestaShop" class="button"><small>View project on</small>GitHub</a>
+        <h2>Installez, Hébergez et Jouez avec la version développeur de PrestaShop v1.6</h2>
+        <!-- <a href="https://github.com/kgranger/PrestaShop" class="button"></a> -->
       </div>
     </header>
-
     <div id="content-wrapper">
       <div class="inner clearfix">
         <section id="main-content">
-          <p>Step by Step Guide</p>
-
-<ul>
-<li>Identifiez-vous sur Koding.com via votre compte Github</li>
-<li>Ouvrez l’onglet du terminal
-<code>
-git clone https://github.com/PrestaShop/PrestaShop.git Web/PS16
-cd Web/PS16/PrestaShop
-chmod -R 777 cache/ config/ log/ img/ mails/ modules/ themes/*/lang themes/*/cache translations/ upload/ download/ themes/*/pdf/lang/ -f
-</code>
-</li>
-</ul><p>Ensuite vous pouvez directement accéder à l’url d’installation de votre boutique : http://[USERNAME].kd.io/PS16/install-dev/ et suivez le processus d’installation de votre nouvelle boutique. (PrestaShop est capable de créer sa table de données tout seul)</p>
+          <ul class="tutorial-list">
+            <li id="create-koding-account-step" class="image-right">
+              <h3>Identifiez-vous sur <a href="koding.com" target="_blank">Koding.com</a></h3>
+              <p>Le plus facile est d'utiliser votre compte Github.<br/><br/>
+                Koding fournit gratuitement un service puissant pour développer sur un serveur virtuel à partir d'un navigateur.
+            </li>
+            <li id="cloning-prestashop-repo-step" class="image-right">
+              <h3>Accédez à l’onglet terminal de Koding</h3>
+              <p>Cet onglet va vous permettre d'intéragir avec votre machine virtuelle en saisissant des lignes de commandes.</p>
+            </li>
+            <li>
+              <h3>Clonez PrestaShop v1.6 sur votre nouvelle machine virtuelle</h3>
+              <div class="terminal">
+                <div class="shell">
+                  <p>git clone https://github.com/PrestaShop/PrestaShop.git Web/PS16</p>
+                  <p>cd Web/PS16/PrestaShop</p>
+                  <p>chmod -R 777 cache/ config/ log/ img/ mails/ modules/ themes/*/lang themes/*/cache translations/ upload/ download/ themes/*/pdf/lang/ -f</p>
+                </div>
+              </div>
+            </li>
+            <li>
+              <h3>Installation de PrestaShop</h3>
+              <p>Accèdez à l’url d’installation de votre boutique :<br><br>http://<em>username</em>.kd.io/PS16/install-dev/</p>
+              <img class="img-thumbnail" src="images/tutorial/Prestashop_install.png" alt="">
+              <br><br>
+              <p>...et suivez le processus d’installation de votre nouvelle boutique.<br>PrestaShop est capable de créer sa table de données tout seul.</p>
+              <br>
+              <img class="img-thumbnail" src="images/tutorial/Prestashop_install.gif" alt="">
+            </li>
+            <li id="final-step">
+              <h3>Félicitations !</h3>
+              <p>Votre boutique de développement est prête.</p>
+              <ul class="back-front">
+                <li><img class="img-thumbnail" src="images/tutorial/Prestashop_front.png" alt="">
+                <p>Front Office : http://<em>username</em>.kd.io/PS16/</p></li>
+                <li><img class="img-thumbnail" src="images/tutorial/Prestashop_back.png" alt="">
+                <p>Back Office : http://<em>username</em>.kd.io/PS16/admin-dev</p></li>
+              </ul>
+              <hr style="clear:both;">
+            </li>
+          </ul>
         </section>
-
-        <aside id="sidebar">
-          <a href="https://github.com/kgranger/PrestaShop/zipball/master" class="button">
-            <small>Download</small>
-            .zip file
-          </a>
-          <a href="https://github.com/kgranger/PrestaShop/tarball/master" class="button">
-            <small>Download</small>
-            .tar.gz file
-          </a>
-
-          <p class="repo-owner"><a href="https://github.com/kgranger/PrestaShop"></a> is maintained by <a href="https://github.com/kgranger">kgranger</a>.</p>
-
-          <p>This page was generated by <a href="https://pages.github.com">GitHub Pages</a> using the Architect theme by <a href="https://twitter.com/jasonlong">Jason Long</a>.</p>
-        </aside>
+        
       </div>
     </div>
-
-  
+    <section id="next-steps">
+          <h1>...maintenant, voici quelques ressources qui pourraient bien vous intéresser</h1>
+          <ul class="next-steps wrapper">
+            <li>
+              <a class="hero-octicon" href="javascript:void(0);">
+                <span class="icon-bulb icon-hero"></span>
+              </a>
+              <h2><a href="javascript:void(0);">Améliorer PrestaShop</a></h2>
+              <ul>
+                <li>Club Utilisateur</li>  
+                <li>Bug tracker</li>
+              </ul>
+            </li>
+            <li>
+              <a class="hero-octicon" href="javascript:void(0);">
+                <span class="icon-study icon-hero"></span>
+              </a>
+              <h2><a href="javascript:void(0);">Apprendre PrestaShop</a></h2>
+              <ul>
+                <li>Doc en ligne</li>
+                <li>Développer un module dashboard 1.6</li>
+              </ul>
+            </li>
+            <li>
+              <a class="hero-octicon" href="javascript:void(0);">
+                <span class="icon-bubble icon-hero"></span>
+              </a>
+              <h2><a href="javascript:void(0);">Rejoindre la communauté</a></h2>
+              <ul>
+                <li>Forum PrestaShop</li>
+                <li>Twitter PrestaShop</li>
+              </ul>
+            </li>
+          </ul>
+        </section>
   </body>
 </html>
