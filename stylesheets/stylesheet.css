@@ -131,12 +131,6 @@ a.button small {
   display: block;
   font-size: 11px;
 }
-header a.button {
-  position: absolute;
-  right: 0;
-  top: 0;
-  background: transparent url(../images/github-button.png) 0 0 no-repeat;
-}
 
 code, pre {
   font-family: Monaco, "Bitstream Vera Sans Mono", "Lucida Console", Terminal, monospace;
@@ -178,7 +172,6 @@ hr {
   margin-top: 1em;
   padding-bottom: 1em;
   border: none;
-  background: transparent url('../images/hr.png') 0 0 no-repeat;
 }
 
 table {
@@ -201,12 +194,6 @@ form {
   padding: 20px;
   
 }
-
-#main-content h6 {
-  font-family: 'Architects Daughter', 'Helvetica Neue', Helvetica, Arial, serif; 
-  font-size: .8em;
-  color: #474747;
-} 
 
 p {
   font-size: 0.8em;
@@ -244,7 +231,6 @@ dl dd {
 }
 
 footer {
-  background: transparent url('../images/hr.png') 0 0 no-repeat;
   margin-top: 40px;
   padding-top: 20px;
   padding-bottom: 30px;
@@ -428,12 +414,12 @@ footer a:hover {
 }
 
 #create-koding-account-step {
-  background: #fff url(/images/tutorial/Koding_homepage.png) right 0 no-repeat;
+  background: #fff url(../images/tutorial/Koding_homepage.png) right 0 no-repeat;
   background-size: 440px;
 }
 
 #cloning-prestashop-repo-step {
-  background: #fff url(/images/tutorial/Koding_terminal.png) right 0 no-repeat;
+  background: #fff url(../images/tutorial/Koding_terminal.png) right 0 no-repeat;
   background-size: 440px;
 }
 
